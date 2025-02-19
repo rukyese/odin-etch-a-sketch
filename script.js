@@ -11,7 +11,6 @@ function drawGrid(size) {
     const cell = document.createElement("div");
 
     cell.style.width = `${100 / size}%`;
-    // cell.style.opacity = '0';
     grid.appendChild(cell);
   }
 
