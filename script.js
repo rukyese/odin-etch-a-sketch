@@ -1,4 +1,6 @@
 const grid = document.querySelector(".container");
+const resetBtn = document.querySelector(".reset");
+const newBtn = document.querySelector(".new");
 
 drawGrid(16);
 
@@ -24,5 +26,12 @@ function handleHover() {
   });
 }
 
+function handleReset() {
+  const cells = document.querySelectorAll(".container div");
+  cells.forEach((cell) => {
+      cell.style.backgroundColor = 'white';
+  });
+}
 
+resetBtn.addEventListener('click', handleReset);
 
